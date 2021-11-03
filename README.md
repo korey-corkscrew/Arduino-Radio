@@ -15,7 +15,9 @@ A basic FM radio with frequency display using an Arduino UNO and RDA5807M radio 
 ## Known Issues
 * Noise is present on the I2C bus (possibly due to lack of pull-up resistors on the I2C bus)
 * RDA5807M is surface mount and needed significant modification to use in a DIP package
+* Power issues when volume is increased above ~50%
 
 ## Possible Updates
 * Switch to using an Arduino Nano and design a PCB instead of using a breadboard
 * Radio Data System (RDS) implementation
+* Design an external +5V power supply to power the Arduino and audio amplifier instead of powering the amplifier from the Arduino
