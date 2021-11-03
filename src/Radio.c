@@ -94,11 +94,11 @@ void loop() {
 
 float getEepromFreq() {
   float frequency = 0.0f;
-  frequency += EEPROM.read(6)  * 100.0f;	// 0.00
-  frequency += EEPROM.read(7)  * 10.0f;		// 90.00
-  frequency += EEPROM.read(8);			    // 91.00
-  frequency += EEPROM.read(9)  / 10.0f;		// 91.50
-  frequency += EEPROM.read(10) / 100.0f;	// 91.50
+  frequency += EEPROM.read(6)  * 100.0f;	   // 0.00
+  frequency += EEPROM.read(7)  * 10.0f;		   // 90.00
+  frequency += EEPROM.read(8);			           // 91.00
+  frequency += EEPROM.read(9)  / 10.0f;		   // 91.50
+  frequency += EEPROM.read(10) / 100.0f;	   // 91.50
   return frequency;
 }
 
@@ -106,12 +106,12 @@ float getEepromFreq() {
 /* STORE LAST TUNED FREQUENCY TO EEPROM */
 
 void setEepromFreq(float frequency) {
-  unsigned short freq = frequency * 100;	// 91.5 -> 9150
-  EEPROM.update(6, (freq / 10000));		    // 0
-  EEPROM.update(7, (freq / 1000) % 10);		// 9
-  EEPROM.update(8, (freq / 100) % 10);		// 1
-  EEPROM.update(9, (freq / 10) % 10);		// 5
-  EEPROM.update(10, freq % 10);			    // 0
+  unsigned short freq = frequency * 100;	   // 91.5 -> 9150
+  EEPROM.update(6, (freq / 10000));		       // 0
+  EEPROM.update(7, (freq / 1000) % 10);		   // 9
+  EEPROM.update(8, (freq / 100) % 10);		    // 1
+  EEPROM.update(9, (freq / 10) % 10);		     // 5
+  EEPROM.update(10, freq % 10);			          // 0
 }
 
 
