@@ -1,6 +1,13 @@
 # Arduino-Radio
 A basic FM radio with frequency display using an Arduino UNO and RDA5807M radio module.
 
+## Front View
+![image](https://user-images.githubusercontent.com/77598913/140168737-ebb9ec9c-1214-4275-ba31-5c0254542d4b.png)
+
+## Top View
+![image](https://user-images.githubusercontent.com/77598913/140168756-ded740f6-e7d7-4aa4-a421-f50c7683c644.png)
+
+
 ## Components
 * Arduino UNO
 * RDA5807M Radio Module
