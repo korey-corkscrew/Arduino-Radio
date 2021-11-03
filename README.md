@@ -1,4 +1,4 @@
-# Arduino-Radio
+# Arduino Radio
 A basic FM radio with frequency display using an Arduino UNO and RDA5807M radio module.
 
 ## Front View
