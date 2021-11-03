@@ -94,7 +94,7 @@ void loop() {
 
 float getEepromFreq() {
   float frequency = 0.0f;
-  frequency += EEPROM.read(6)  * 100.0f;	// 0.00
+  frequency += EEPROM.read(6)  * 100.0f;// 0.00
   frequency += EEPROM.read(7)  * 10.0f;		// 90.00
   frequency += EEPROM.read(8);			        // 91.00
   frequency += EEPROM.read(9)  / 10.0f;		   // 91.50
